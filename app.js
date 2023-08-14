@@ -46,7 +46,7 @@ document.getElementById('withdrawBtn').addEventListener('click', function(){
     const withdrawBalanceValue = withdrawBalance.innerText;
     const withdrawBalanceIntser = parseFloat(withdrawBalanceValue);
 
-    if(withdraw > 0 && withdraw <= currentBalanceIntser && withdraw !== ''){
+    if(withdraw > 0 && withdraw <= currentBalanceIntser ){
         currentBalance.innerText = currentBalanceIntser - withdraw;
         withdrawBalance.innerText = withdrawBalanceIntser + withdraw;
     }
